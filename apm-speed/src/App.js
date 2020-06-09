@@ -3,8 +3,12 @@ import Header from './components/Header';
 export default class App extends React.Component {
   render(){
     return (
-      <div>
-        <Header />
+      <div className="app-container">
+
+        <div className="header-container">
+          <Header />
+        </div>
+
       </div>
     )
   }
