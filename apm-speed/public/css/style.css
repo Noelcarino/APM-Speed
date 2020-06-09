@@ -46,21 +46,29 @@ html {
 
 /* TIMER STYLES
 **********************************************************************************/
-.timer-container {
+.time-container {
     margin: auto;
     width: 100%;
 
     padding: 10px;
     box-sizing: border-box;
     border: 2px solid lightblue;
-    margin-bottom: 25px;
 }
 .component-timer-container {
     border: 1px solid black;
     width: 50%;
     margin: 0px auto;
+    border-radius: 3px;
+    overflow: hidden;
 }
 .controller-btn-container {
     display: flex;
     flex-direction: row;
+    padding: 5px;
+}
+.ctc-title{
+    width: 100%;
+    background-color: #2f292e;
+    color: white;
+    padding: 5px;
 }
