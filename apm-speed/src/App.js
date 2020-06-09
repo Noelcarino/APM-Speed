@@ -1,5 +1,7 @@
 import React from 'react';
 import Header from './components/Header';
+import Controls from './components/Controls';
+
 export default class App extends React.Component {
   render(){
     return (
@@ -7,6 +9,10 @@ export default class App extends React.Component {
 
         <div className="header-container">
           <Header />
+        </div>
+
+        <div className="controller-container">
+          <Controls />
         </div>
 
       </div>

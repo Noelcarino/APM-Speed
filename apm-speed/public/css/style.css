@@ -20,11 +20,16 @@ html {
     padding: 0px;
     
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 .header-container {
     margin: auto;
     width: 100%;
+
+    padding: 10px;
+    box-sizing: border-box;
+    border: 2px solid lightblue;
+    margin-bottom: 25px;
 }
 
 /* HEADER STYLES
@@ -37,4 +42,20 @@ html {
 }
 .header-title-container > h1 {
     margin: 0px auto;
+}
+
+/* CONTROLLER STYLES
+**********************************************************************************/
+.controller-container {
+    margin: auto;
+    width: 100%;
+
+    padding: 10px;
+    box-sizing: border-box;
+    border: 2px solid lightblue;
+    margin-bottom: 25px;
+}
+.controller-btn-container {
+    display: flex;
+    flex-direction: row;
 }
