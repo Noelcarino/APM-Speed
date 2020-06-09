@@ -1,0 +1,40 @@
+/*
+    CONTENTS OF STYLES
+        - APP
+        - HEADER
+
+*/
+
+body, h1 {
+    margin: 0;
+    padding: 0;
+}
+html {
+    padding: 0px;
+}
+
+/* APP STYLES
+**********************************************************************************/
+.app-container {
+    margin: 0px;
+    padding: 0px;
+    
+    display: flex;
+    flex-direction: row;
+}
+.header-container {
+    margin: auto;
+    width: 100%;
+}
+
+/* HEADER STYLES
+**********************************************************************************/
+.header-title-container{
+    background-color: #2f292e;
+    color: white;
+    padding: 5px;
+    display: flex;
+}
+.header-title-container > h1 {
+    margin: 0px auto;
+}
