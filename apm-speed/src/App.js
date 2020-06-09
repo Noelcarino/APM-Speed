@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from './components/Header';
-import Controls from './components/Controls';
+import Timer from './components/Timer';
 
 export default class App extends React.Component {
   render(){
@@ -11,8 +11,8 @@ export default class App extends React.Component {
           <Header />
         </div>
 
-        <div className="controller-container">
-          <Controls />
+        <div className="timer-container">
+          <Timer />
         </div>
 
       </div>

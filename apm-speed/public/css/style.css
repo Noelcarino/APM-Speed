@@ -44,9 +44,9 @@ html {
     margin: 0px auto;
 }
 
-/* CONTROLLER STYLES
+/* TIMER STYLES
 **********************************************************************************/
-.controller-container {
+.timer-container {
     margin: auto;
     width: 100%;
 
@@ -54,6 +54,11 @@ html {
     box-sizing: border-box;
     border: 2px solid lightblue;
     margin-bottom: 25px;
+}
+.component-timer-container {
+    border: 1px solid black;
+    width: 50%;
+    margin: 0px auto;
 }
 .controller-btn-container {
     display: flex;
