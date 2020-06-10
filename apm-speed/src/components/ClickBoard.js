@@ -17,11 +17,11 @@ export default class ClickBoard extends React.Component {
             boxDiv = document.createElement('div');
             boxDiv.id = 'box-' + i;
             boxDiv.classList.add('cbc-boxes');
+            boxDiv.addEventListener('click', (e) => console.log(e.target.id));
             target.appendChild(boxDiv);
             console.log(i);
         }
         console.log("boxes loaded");
-
     }
     componentDidMount(){
         this.loadBoxes();

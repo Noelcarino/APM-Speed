@@ -96,6 +96,7 @@ html {
     height: 100px;
     background-color: grey;
     margin: auto;
+    cursor:pointer;
 }
 
 /* TIMER STYLES
