@@ -1,3 +1,3 @@
 # APM-Speed
 
-A simple application to improve your APM (actions per minute)
+An application to improve your APM (actions per minute)
