@@ -7,15 +7,15 @@ export default class App extends React.Component {
     return (
       <div className="app-container">
 
-        <div className="header-container">
+        <div className="component">
           <Header />
         </div>
 
-        <div className="clickboard-container">
+        <div className="component">
           <ClickBoard />
         </div>
 
-        <div className="timer-container">
+        <div className="component">
           <Timer />
         </div>
 

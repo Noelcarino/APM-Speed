@@ -8,4 +8,4 @@ export default class ClickBoard extends React.Component {
             </div>
         )
     }
-}
+} 
