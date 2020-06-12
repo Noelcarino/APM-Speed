@@ -8,7 +8,11 @@ import React from 'react';
 export default class ClickBoard extends React.Component {
     constructor(props){
         super(props);
+        this.state = {
+            clicked: []
+        }
         this.loadBoxes = this.loadBoxes.bind(this);
+        this.pickRandomBox = this.pickRandomBox.bind(this);
     }
     loadBoxes(){
         let target = document.getElementById('cbc-boxLoading-target');
@@ -18,11 +22,24 @@ export default class ClickBoard extends React.Component {
             boxDiv.id = 'box-' + i;
             boxDiv.classList.add('cbc-boxes');
             boxDiv.innerHTML = i;
-            boxDiv.addEventListener('click', (e) => console.log(e.target.id));
+            boxDiv.addEventListener('click', (e) => this.pickRandomBox(e));
             target.appendChild(boxDiv);
             console.log(i);
         }
         console.log("boxes loaded");
+    }
+    pickRandomBox(e){
+        //if not in state, add to state
+        // if in state, return;
+        if (this.state.clicked.includes(e.target.id)){
+            console.log("you already clicked");
+            return;
+        }  else {
+            let copyArray = this.state.clicked;
+            copyArray.push(e.target.id);
+            this.setState({clicked: copyArray});
+            console.log(copyArray);
+        }
     }
     componentDidMount(){
         this.loadBoxes();
