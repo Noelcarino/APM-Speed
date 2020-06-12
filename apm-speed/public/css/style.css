@@ -94,9 +94,13 @@ html {
 .cbc-boxes {
     width: 100px;
     height: 100px;
-    background-color: grey;
+    background-color: lightblue;
     margin: auto;
     cursor:pointer;
+}
+.cbc-clicked {
+    background-color: #2f292e;
+    color: white;
 }
 
 /* TIMER STYLES
