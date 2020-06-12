@@ -35,6 +35,10 @@ export default class ClickBoard extends React.Component {
             console.log("you already clicked");
             return;
         }  else {
+            let currentBox = document.getElementById(e.target.id);
+            currentBox.classList.add('cbc-clicked');
+            currentBox.innerHTML = 'Clicked!';
+            
             let copyArray = this.state.clicked;
             copyArray.push(e.target.id);
             this.setState({clicked: copyArray});
