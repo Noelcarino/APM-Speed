@@ -13,6 +13,17 @@ export default class ClickBoard extends React.Component {
         }
         this.loadBoxes = this.loadBoxes.bind(this);
         this.pickRandomBox = this.pickRandomBox.bind(this);
+        this.resetBoard = this.resetBoard.bind(this);
+    }
+    resetBoard(){
+        this.setState({clicked:[]});
+        let currentTarget;
+        for (var i = 1; i <= 5; i++){
+            currentTarget = document.getElementById("box-" + i);
+            currentTarget.classList.remove('cbc-clicked');
+            currentTarget.innerHTML = i;
+
+        }
     }
     loadBoxes(){
         let target = document.getElementById('cbc-boxLoading-target');
@@ -54,6 +65,9 @@ export default class ClickBoard extends React.Component {
             <div id="clickboard-component">
                 <div className="cbc-title">Component ClickBoard Container (Below are the 5 boxes)</div>
                 <div id="cbc-boxLoading-target"></div>
+
+                <button onClick={this.resetBoard}>Reset Button</button>
+
             </div>
         )
     }
