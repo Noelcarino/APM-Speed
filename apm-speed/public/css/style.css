@@ -97,6 +97,11 @@ html {
     background-color: lightblue;
     margin: auto;
     cursor:pointer;
+    border-radius: 50%;
+    display: flex;
+}
+.cbc-boxes > p {
+    margin: auto;
 }
 .cbc-clicked {
     background-color: #2f292e;

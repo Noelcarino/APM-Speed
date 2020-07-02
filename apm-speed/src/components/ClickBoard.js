@@ -27,12 +27,16 @@ export default class ClickBoard extends React.Component {
     }
     loadBoxes(){
         let target = document.getElementById('cbc-boxLoading-target');
+        let innerText;
         let boxDiv;
         for (var i = 5; i >= 1; i--){
             boxDiv = document.createElement('div');
+            innerText = document.createElement('p');
+            innerText.innerText = i;
             boxDiv.id = 'box-' + i;
             boxDiv.classList.add('cbc-boxes');
-            boxDiv.innerHTML = i;
+
+            boxDiv.appendChild(innerText)
             boxDiv.addEventListener('click', (e) => this.pickRandomBox(e));
             target.appendChild(boxDiv);
             console.log(i);
